@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --main-color-red: #E8505C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+header nav{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 1px 32px 0 rgba(188, 191, 241, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 0px );
+}
+header ul li a{
+    margin-right: 10px;
+    padding: 7px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+header ul li a:hover{
+    box-shadow: inset 0 -3px 0 0 #151A39;
+    transition: ease-in-out .5s;
+}
+h1 {
+    color: #151A39;
+    font-weight: 400;
+}
+
+
+/* Section aapresentação */
+
+#size-presentation{
+    margin-top: 100px !important;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.resume{
+    margin-top: 220px;
+}
+.resume p{
+    color: #2CC4C9;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.resume-img{
+    margin-top: 120px;
+}
+
+/* Quem Sou eu */
+
+#size-quem-sou{
+    background: #FDEFEF;
+}
+
+.description h1 span{
+    font-weight: 900;
+    color: var(--main-color-red);
+}
+.description p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--main-color-red);
+}
+
+/* Carrousel Portfólio */
+
+#size-portfolio{
+    height: 80vh;
+}
+.bg-edited{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0 100px;
+}
+    .btn-edited{
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    font-family: inherit;
+    color: #fff;
+    padding: 10px !important;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 10px;
+    transition: ease-in-out .4s;
+    z-index: 1;
+   }
+   
+   .btn-edited:hover {
+    transition: ease-in-out .4s;
+    padding: 10px 20px !important;
+    color: #FDEFEF;
+    border: none;
+   }
+
+   .img-tec-edited{
+    width: 30px;
+   }
+
+   /* Conhecimentos */
+
+#size-conhecimentos{
+    background: #FDEFEF;
+    height: 50vh;
+}
+.informe-conhecimento{
+    font-weight: bold;
+    color: #E45058;
+}
+.img-conhecimentos span img{
+    width: 120px;
+    transition: all .4s;
+}
+.html:hover{
+    width: 150px;
+}
+.css:hover{
+    width: 150px;
+}
+
+/* Contato */
+#size-contato{
+    height: 40vh;
+}
+.legend-contact{
+    color: #151A39 !important;
+}
+.legend-contact span a{
+    color: #E45058 !important;
+}
+.link-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 10px;
+    width: 170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151A39;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 #FDEFEF;
+    transition: ease-in-out .6s;
+}   
+.link-contact:hover{
+    color: #fff;
+    box-shadow: inset 250px 0 1px 0 #E45058;
+    transition: ease-in-out .6s;
+}
+
+.legend-contact{
+    color: #151A39;
+}
+.legend-contact{
+    color:#151A39;
+}
+.fa-whatsapp,
+.fa-github,
+.fa-linkedin,
+.fa-instagram{
+    color: #fff;
+    font-size: 24px;
+}
+
+/* rodapé */
+
+#rodape{
+    position: relative;
+    bottom: 0;
+    background: #151A39;
+    height: 60px;
+}
+.footer-edited{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/* ================================================================================================== */
+
+/* Responsividade */
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 360px){
+    /* ALL */
+    .conhecemineto{
+        font-size: 50px;
+        margin-right: -40px;
+    }
+    h1{
+        font-size: 50px;
+    }
+
+    /* =================================================================== */
+    /* RESUMO */
+    .resume{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume p{
+        font-size: 30px;
+    } 
+    .resume h1{
+        text-align: center;
+        font-size: 60px !important;
+    }
+
+    /* =================================================================== */
+    /* Carousel */
+    
+    /* =================================================================== */
+    /* CONHECIMENTO */
+    .conhecemineto{
+        margin-left: -30px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .resume{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume p{
+        font-size: 30px;
+    } 
+    .resume h1{
+        text-align: center;
+        font-size: 100px;
+    }
+
+    /* =================================================================== */
+    /* Carousel */
+    
+
+    /* =================================================================== */
+    /* CONHECIMENTO */
+    .conhecemineto{
+        margin-left: -30px;
+    }
+
+
+    /* =================================================================== */
+    /* CONTATO */
+    
+    #size-contato{
+        height: 35vh;
+    }
+    .link-contact{
+        width: 70px;
+        height: 70px;
+        border: none;
+        background: transparent;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
+        backdrop-filter: blur( 0 );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        /* color: #fff;
+        box-shadow: inset 0 0 0 0 #FDEFEF;
+        transition: ease-in-out .6s;*/
+    } 
+    .link-contact span{
+        visibility: hidden;
+    }  
+    .link-contact:hover{
+        color: #fff;
+        box-shadow: inset 250px 0 1px 0 #E45058;
+        transition: ease-in-out .6s;
+    }
+    .fa-whatsapp,
+    .fa-github,
+    .fa-linkedin,
+    .fa-instagram{
+        font-size: 40px;
+    }
+    .fa-linkedin{
+        margin-left: 60px;
+        color: #03a9f4;
+    }
+    .link-contact:hover .fa-linkedin{
+        color: #fff;
+    }
+    .fa-github{
+        margin-left: 45px;
+        color: #151A39;
+    }
+    .link-contact:hover .fa-github{
+        color: #fff;
+    }
+    .fa-whatsapp{
+        margin-left: 70px;
+        color: rgb(2, 182, 35);
+    }
+    .link-contact:hover .fa-whatsapp{
+        color: #fff;
+    }
+    .fa-instagram{
+        margin-left: 70px;
+        color: #E45058;
+    }
+    .link-contact:hover .fa-instagram{
+        color: #fff;
+    }
+    
+    .legend-contact{
+        color: #151A39;
+    }
+    .legend-contact{
+        color:#151A39;
+    }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .resume{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume p{
+        font-size: 30px;
+    } 
+    .resume h1{
+        text-align: center;
+        font-size: 100px;
+    }
+
+    /* =================================================================== */
+    /* Carousel */
+    
+
+
+    /* =================================================================== */
+    /* CONTATO */
+    #size-contato{
+        height: 35vh;
+    }
+    .link-contact{
+        width: 70px;
+        height: 70px;
+        border: none;
+        background: transparent;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
+        backdrop-filter: blur( 0 );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        /* color: #fff;
+        box-shadow: inset 0 0 0 0 #FDEFEF;
+        transition: ease-in-out .6s;*/
+    } 
+    .link-contact span{
+        visibility: hidden;
+    }  
+    .link-contact:hover{
+        color: #fff;
+        box-shadow: inset 250px 0 1px 0 #E45058;
+        transition: ease-in-out .6s;
+    }
+    .fa-whatsapp,
+    .fa-github,
+    .fa-linkedin,
+    .fa-instagram{
+        font-size: 40px;
+    }
+    .fa-linkedin{
+        margin-left: 60px;
+        color: #03a9f4;
+    }
+    .link-contact:hover .fa-linkedin{
+        color: #fff;
+    }
+    .fa-github{
+        margin-left: 45px;
+        color: #151A39;
+    }
+    .link-contact:hover .fa-github{
+        color: #fff;
+    }
+    .fa-whatsapp{
+        margin-left: 70px;
+        color: rgb(2, 182, 35);
+    }
+    .link-contact:hover .fa-whatsapp{
+        color: #fff;
+    }
+    .fa-instagram{
+        margin-left: 70px;
+        color: #E45058;
+    }
+    .link-contact:hover .fa-instagram{
+        color: #fff;
+    }
+    
+    .legend-contact{
+        color: #151A39;
+    }
+    .legend-contact{
+        color:#151A39;
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .resume{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .resume-img{
+        margin-top: 55px;
+    }
+
+    /* =================================================================== */
+    /* CAROUSEL */
+    
+
+
+    /* =================================================================== */
+    /* CONTATO */
+    #size-contato{
+        height: 35vh;
+    }
+    .link-contact{
+        width: 70px;
+        height: 70px;
+        border: none;
+        background: transparent;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
+        backdrop-filter: blur( 0 );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        /* color: #fff;
+        box-shadow: inset 0 0 0 0 #FDEFEF;
+        transition: ease-in-out .6s;*/
+    } 
+    .link-contact span{
+        visibility: hidden;
+    }  
+    .link-contact:hover{
+        color: #fff;
+        box-shadow: inset 250px 0 1px 0 #E45058;
+        transition: ease-in-out .6s;
+    }
+    .fa-whatsapp,
+    .fa-github,
+    .fa-linkedin,
+    .fa-instagram{
+        font-size: 40px;
+    }
+    .fa-linkedin{
+        margin-left: 60px;
+        color: #03a9f4;
+    }
+    .link-contact:hover .fa-linkedin{
+        color: #fff;
+    }
+    .fa-github{
+        margin-left: 45px;
+        color: #151A39;
+    }
+    .link-contact:hover .fa-github{
+        color: #fff;
+    }
+    .fa-whatsapp{
+        margin-left: 70px;
+        color: rgb(2, 182, 35);
+    }
+    .link-contact:hover .fa-whatsapp{
+        color: #fff;
+    }
+    .fa-instagram{
+        margin-left: 70px;
+        color: #E45058;
+    }
+    .link-contact:hover .fa-instagram{
+        color: #fff;
+    }
+    
+    .legend-contact{
+        color: #151A39;
+    }
+    .legend-contact{
+        color:#151A39;
+    }
+}
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    /* =================================================================== */
+    
+
+
+    /* =================================================================== */
+    /* CONTATO */
+    .fa-whatsapp,
+    .fa-github,
+    .fa-linkedin,
+    .fa-instagram{
+        color: #fff;
+        font-size: 24px;
+        margin-right: 10px !important;
+    }
+}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) {
+    
+    /* =================================================================== */
+    /* Carousel */
+    /* #size-portfolio{
+        height: 90vh;
+    } */
+    .container-cards{
+        visibility: hidden;
+    }
+
+    /* =================================================================== */
+    /* CONTATO */
+    .fa-whatsapp,
+    .fa-github,
+    .fa-linkedin,
+    .fa-instagram{
+        color: #fff;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+}
